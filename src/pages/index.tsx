@@ -16,7 +16,6 @@ export default function Home() {
         <title>Inicio | pomodoro clock</title>
       </Head>
       <ExperienceBar />   
-<<<<<<< HEAD
       <CountdownProvider>
         <section>   
           <div>
@@ -30,19 +29,6 @@ export default function Home() {
           </div>
         </section>
       </CountdownProvider>
-=======
-      <section>   
-        <div>
-          <Profile/>
-          <CompletedChallenges />
-          <Countdown />
-        </div>
- 
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
->>>>>>> ContextApi implementado
     </div>
   );
 }

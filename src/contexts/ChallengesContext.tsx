@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { createContext, useState, ReactNode, useEffect } from 'react';
-=======
-import { createContext, useState, ReactNode } from 'react';
->>>>>>> ContextApi implementado
 import challenges from '../../challenges.json';
 
 interface Challenge {
@@ -20,10 +16,7 @@ interface ChallengesContextData {
   levelUp: () => void;
   startNewChallenge: () => void;  
   resetChallenge: () => void;
-<<<<<<< HEAD
   completeChallenge: () => void;
-=======
->>>>>>> ContextApi implementado
 }
 
 interface ChallengesProviderProps {
@@ -39,15 +32,11 @@ export function ChallengesProvider({ children }: ChallengesProviderProps){
 
   const [activeChallenge, setActiveChallenge] = useState(null);
 
-<<<<<<< HEAD
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
   useEffect(() => {
     Notification.requestPermission();
   }, [])
-=======
-  const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
->>>>>>> ContextApi implementado
 
   function levelUp(){
     setLevel(level + 1);
@@ -58,7 +47,6 @@ export function ChallengesProvider({ children }: ChallengesProviderProps){
     const challenge = challenges[randomChallengeIndex];
 
     setActiveChallenge(challenge);
-<<<<<<< HEAD
 
     new Audio('/notification.mp3').play();
 
@@ -67,15 +55,12 @@ export function ChallengesProvider({ children }: ChallengesProviderProps){
         body: `Valendo ${challenge.amount}xp!`
       })
     }
-=======
->>>>>>> ContextApi implementado
   }
 
   function resetChallenge(){
     setActiveChallenge(null);
   }
 
-<<<<<<< HEAD
   function completeChallenge(){
     if(!activeChallenge){
       return
@@ -94,8 +79,6 @@ export function ChallengesProvider({ children }: ChallengesProviderProps){
     setChallengesCompleted(challengesCompleted + 1);
   }
 
-=======
->>>>>>> ContextApi implementado
   return(
     <ChallengesContext.Provider 
       value={{
@@ -107,10 +90,7 @@ export function ChallengesProvider({ children }: ChallengesProviderProps){
         activeChallenge,
         resetChallenge,
         experienceToNextLevel,
-<<<<<<< HEAD
         completeChallenge,
-=======
->>>>>>> ContextApi implementado
         }}
       >
       {children}
