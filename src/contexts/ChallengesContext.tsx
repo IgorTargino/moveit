@@ -21,10 +21,7 @@ interface ChallengesContextData {
   startNewChallenge: () => void;  
   resetChallenge: () => void;
   completeChallenge: () => void;
-<<<<<<< HEAD
   closeLevelUpModal: () => void;
-=======
->>>>>>> 3986687f86a346db5f976d9e85d3686083faa2be
 }
 
 interface ChallengesProviderProps {
