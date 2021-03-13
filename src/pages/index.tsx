@@ -14,7 +14,7 @@ import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 import { Container, Section } from '../styles/pages/Home';
-import GlobalStyle from '../styles/global';
+
 
 import dark from '../styles/themes/dark';
 import light from '../styles/themes/light';
@@ -24,42 +24,38 @@ interface HomeProps {
   level: number;
   currentExperience: number;
   challengesCompleted: number;
+  toggleTheme: () => { };
 }
-export default function Home(props: HomeProps) {
-  const [theme, setTheme] = useState(light);
 
-  const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light);
-  }
+export default function Home(props: HomeProps) {
+
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle/>
-      <ChallengesProvider
-        level={props.level}
-        currentExperience={props.currentExperience}
-        challengesCompleted={props.challengesCompleted}
-      >
-        <Container>
-          <Head>
-            <title>Inicio | pomodoro clock</title>
-          </Head>
-          <ExperienceBar />
-          <ToggleButton toggleTheme={toggleTheme}/>
-          <CountdownProvider>
-            <Section>
-              <div>
-                <Profile />
-                <CompletedChallenges />
-                <Countdown />
-              </div>
-              <div>
-                <ChallengeBox />
-              </div>
-            </Section>
-          </CountdownProvider>
-        </Container>
-      </ChallengesProvider>
-    </ThemeProvider>
+
+    <ChallengesProvider
+      level={props.level}
+      currentExperience={props.currentExperience}
+      challengesCompleted={props.challengesCompleted}
+    >
+      <Container>
+        <Head>
+          <title>Inicio | pomodoro clock</title>
+        </Head>
+        <ExperienceBar />
+        <ToggleButton toggleTheme={props.toggleTheme}/>
+        <CountdownProvider>
+          <Section>
+            <div>
+              <Profile />
+              <CompletedChallenges />
+              <Countdown />
+            </div>
+            <div>
+              <ChallengeBox />
+            </div>
+          </Section>
+        </CountdownProvider>
+      </Container>
+    </ChallengesProvider>
   );
 }
 

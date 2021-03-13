@@ -3,11 +3,12 @@ export default {
 
   color: {
     white: '#fff',
-    background: '#222',
+    dark: '#575D61',
+    background: '#141414',
     grayLine: '#DCDDE0',
-    text: '#fff',
-    textHighlight: '#B3B9FF',
-    title: '#2E384D',
+    text: '#E6EED6',
+    textHighlight: '#2C2A4A',
+    title: '#E6E6EA',
     red: '#E83F5B',
     green: '#4CD62B',
     blue: '#5965E0',

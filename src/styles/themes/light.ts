@@ -3,6 +3,7 @@ export default {
 
   color: {
     white: '#fff',
+    dark: '#575D61',
     background: '#f2f3f5',
     grayLine: '#DCDDE0',
     text: '#666666',

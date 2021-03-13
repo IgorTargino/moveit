@@ -14,7 +14,10 @@ const Overlay = styled.div`
 `;
 
 const Container = styled.div`
-  background: ${props => props.theme.color.white};
+  background: 
+    ${props => props.theme.title === 'dark'
+    ? props.theme.color.dark
+    : props.theme.color.white};
   width: 100%;
   max-width: 400px;
   padding: 2rem 3rem;
