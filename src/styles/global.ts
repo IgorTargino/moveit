@@ -20,7 +20,7 @@ export default createGlobalStyle`
 }
 
 body {
-  background: ${props => props.theme.color.background};
+  background: ${props => props.theme.color.secondary};
   color: ${props => props.theme.color.text};
 }
 

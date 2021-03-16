@@ -14,5 +14,8 @@ export default {
     blue: '#5965E0',
     blueDark: '#4953B8',
     blueTwitter: '#2AA9E0',
+    loginBackground: '#000',
+    primary: '#141414',
+    secondary: '#1e1e1e',
   },
 }

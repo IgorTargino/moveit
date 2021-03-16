@@ -17,6 +17,9 @@ declare module 'styled-components' {
       blue: string;
       blueDark: string;
       blueTwitter: string;
+      loginBackground: string;
+      primary: string;
+      secondary: string;
     },
   }
 }

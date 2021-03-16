@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div` 
+const Container = styled.div` 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,3 +19,5 @@ export const Container = styled.div`
     font-size: 1.5rem;
   }
 `;
+
+export { Container };

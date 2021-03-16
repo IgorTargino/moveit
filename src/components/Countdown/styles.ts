@@ -14,10 +14,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-evenly;
 
-    background: 
-      ${props => props.theme.title === 'dark'
-      ? props.theme.color.dark
-      : props.theme.color.white};
+    background: ${props => props.theme.color.primary};
 
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
@@ -56,12 +53,8 @@ const Button = styled.button`
   border: 0;
   border-radius: 5px;
 
-  background: 
-    ${props => props.theme.title === 'dark' 
-    ? props.theme.color.green 
-    : props.theme.color.blue};
-  color: 
-    ${props => props.theme.color.title};
+  background: ${props => props.theme.color.green};
+  color: ${props => props.theme.color.title};
 
 
   font-size: 1.25rem;
@@ -74,10 +67,7 @@ const Button = styled.button`
   }
 
   &:disabled{
-    background: 
-      ${props => props.theme.title === 'dark'
-      ? props.theme.color.dark
-      : props.theme.color.white};
+    background: ${props => props.theme.color.primary};
     color: ${props => props.theme.color.text};
     border-bottom: 4px solid ${props => props.theme.color.green};
     cursor: not-allowed;
@@ -85,10 +75,7 @@ const Button = styled.button`
 `;
 
 const ButtonActive = styled(Button)`
-  background: 
-    ${props => props.theme.title === 'dark'
-    ? props.theme.color.dark
-    : props.theme.color.white};
+  background: ${props => props.theme.color.primary};
   color: ${props => props.theme.color.title};
   border: 0;
 

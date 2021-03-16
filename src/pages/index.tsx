@@ -15,10 +15,8 @@ import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 import { Container, Section } from '../styles/pages/Home';
 
-
-import dark from '../styles/themes/dark';
-import light from '../styles/themes/light';
-import { useState } from 'react';
+import { signIn, signOut, useSession } from 'next-auth/client';
+import Redirect from '../components/Redirect';
 
 interface HomeProps {
   level: number;
@@ -28,6 +26,11 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
+  const [session]: any = useSession();
+
+  // if (!session) {
+  //   return <Redirect to="/login" />;
+  // }
 
   return (
 
@@ -41,7 +44,7 @@ export default function Home(props: HomeProps) {
           <title>Inicio | pomodoro clock</title>
         </Head>
         <ExperienceBar />
-        <ToggleButton toggleTheme={props.toggleTheme}/>
+        {/* <ToggleButton toggleTheme={props.toggleTheme}/> */}
         <CountdownProvider>
           <Section>
             <div>
@@ -70,3 +73,5 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     }
   }
 }
+
+
