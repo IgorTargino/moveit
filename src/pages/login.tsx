@@ -1,11 +1,11 @@
 
 import Head from "next/head";
 
-import { signIn, signOut, useSession } from 'next-auth/client'
+import { signIn, useSession } from 'next-auth/client'
 
-import Redirect from '../../components/Redirect';
+import Redirect from '../components/Redirect';
 
-import { Container, Background, LoginContainer, Button } from './styles';
+import { Container, Background, LoginContainer, Button } from '../styles/pages/Login';
 import { AiOutlineArrowRight, AiFillGithub } from 'react-icons/ai';
 
 
