@@ -1,13 +1,10 @@
 import { useContext } from "react";
-
-import { shade } from "polished";
-import Switch  from "react-switch";
-
-import { Container } from './styles';
-
 import { ThemeContext } from "styled-components";
 
+import Switch  from "react-switch";
+import { shade } from "polished";
 
+import { Container } from './styles';
 interface ToggleButtonProps {
   toggleTheme: () => void;
 }
@@ -27,6 +24,7 @@ function ToggleButton(props: ToggleButtonProps){
         handleDiameter={20}
         offColor={shade(0.1, color.background)}
         onColor={color.grayLine}
+        offHandleColor={color.dark}
       />
     </Container>
   )
