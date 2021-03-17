@@ -28,9 +28,9 @@ interface HomeProps {
 export default function Home(props: HomeProps) {
   const [session]: any = useSession();
 
-  // if (!session) {
-  //   return <Redirect to="/login" />;
-  // }
+  if (!session) {
+    return <Redirect to="/login" />;
+  }
 
   return (
 
@@ -44,7 +44,6 @@ export default function Home(props: HomeProps) {
           <title>Inicio | pomodoro clock</title>
         </Head>
         <ExperienceBar />
-        {/* <ToggleButton toggleTheme={props.toggleTheme}/> */}
         <CountdownProvider>
           <Section>
             <div>

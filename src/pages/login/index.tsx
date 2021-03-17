@@ -12,9 +12,9 @@ import { AiOutlineArrowRight, AiFillGithub } from 'react-icons/ai';
 export default function Page() {
   const [session, loading] = useSession()
 
-  // if (session) {
-  //   return <Redirect to="/" />;
-  // }
+  if (session) {
+    return <Redirect to="/" />;
+  }
   
   return (
     <>
