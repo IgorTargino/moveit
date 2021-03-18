@@ -10,6 +10,11 @@ const Container = styled.div`
 
   background: ${props => props.theme.color.loginBackground};
   color: ${props => props.theme.color.white};
+
+
+  @media(max-width: 720px){
+    justify-content: center;
+  }
 `;
 
 const Background = styled.img`
@@ -51,6 +56,12 @@ const LoginContainer = styled.div`
 
   > img {
     fill: white;
+  }
+
+  @media(max-width: 720px){
+    width: auto;
+    align-items: center;
+    padding: 0;
   }
 `;
 
