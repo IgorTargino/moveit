@@ -14,24 +14,39 @@ const Container = styled.div`
   
   background-color: ${(props) => props.theme.color.primary};
 
-  @media(max-width: 720px) {
+  @media(max-width: 1150px) {
     width: 100%;
-    height: 50px;
+    height: 10px;
+    padding: 30px 18px;
+    bottom: 0;
+
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+
+    > section {
+      display: flex;
+      height: 100%;
+    }
   }
+
+  > section {
+    width: 100%;
+    height: auto;
+    background: ${props => props.theme.color.primary};
+  }
+
+
 `;
 
 const ContainerButton = styled.div`
   width: 100%;
-  height: auto;
-  background: ${props => props.theme.color.secondary};
-`
-
-const Button = styled.button`
-  width: 100%;
   height: 100px;
   border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   background: ${props => props.theme.color.primary};
   color: ${prosp => prosp.theme.color.title};
@@ -39,12 +54,13 @@ const Button = styled.button`
 
   &:hover {
     border-right: 2px solid ${props => props.theme.color.green};
+    cursor: pointer;
   }
 
-  &:active {
-    border: 0;
+  @media(max-width: 1150px){
+    height: 100%;
   }
 
 `;
 
-export { Container, ContainerButton, Button };
+export { Container, ContainerButton };

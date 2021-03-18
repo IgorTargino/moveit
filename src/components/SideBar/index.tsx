@@ -1,8 +1,10 @@
 import { signOut } from "next-auth/client";
 import { useRouter } from "next/router";
-import ToggleButton from "../ToggleButton";
 
-import { Container, ContainerButton, Button } from './styles';
+import ToggleButton from "../ToggleButton";
+import { AiOutlineLogout, AiOutlineHome } from "react-icons/ai";
+
+import { Container, ContainerButton } from './styles';
 
 interface SideBarProps {
   toggleTheme: () => void;
@@ -13,13 +15,17 @@ function SideBar(props: SideBarProps) {
 
   return (
     <Container>
-      <img src="./icons/logo-azul.svg" alt=""/>
-      <ContainerButton>
-        <Button>
-          Home
-        </Button>
-        <Button onClick={() => signOut()}>Logout</Button>
-      </ContainerButton> 
+      <img src="./icons/logo-azul.svg" alt="" />
+      <section>
+        <ContainerButton>
+          <AiOutlineHome/>
+        </ContainerButton>
+        <ContainerButton
+          onClick={() => signOut()
+          }>
+          <AiOutlineLogout/>
+        </ContainerButton>
+      </section>
       <ToggleButton toggleTheme={props.toggleTheme}></ToggleButton>
     </Container>
   );
