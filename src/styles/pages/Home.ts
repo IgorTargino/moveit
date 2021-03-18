@@ -22,6 +22,7 @@ const Section = styled.section`
 
   @media(max-width: 720px){
     grid-template-columns: 1fr;
+    padding-bottom: 5rem;
   }
 `;
 
