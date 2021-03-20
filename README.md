@@ -57,7 +57,7 @@ GITHUB_CLIENT_ID="É pego no Auth do seu github"
 
 GITHUB_CLIENT_SECRET="É pego no Auth do seu github"
 
-NEXTAUTH_URL="URL base do seu site, como http://localhost:3000 ou https://moveit-taupe-sigma.vercel.app/"
+NEXTAUTH_URL="URL base do seu site, como http://localhost:3000 ou https://pomodoro-clock-ebon.vercel.app/login
 
 ### Instalação
 ```
