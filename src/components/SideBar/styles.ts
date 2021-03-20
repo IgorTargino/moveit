@@ -27,6 +27,7 @@ const Container = styled.div`
     > section {
       display: flex;
       height: 100%;
+      justify-content: center;
     }
   }
 
@@ -59,6 +60,13 @@ const ContainerButton = styled.div`
 
   @media(max-width: 1150px){
     height: 100%;
+    padding-bottom: 10px;
+    width: 20%;
+
+    &:hover {
+      border: 0;
+      border-bottom: 2px solid ${props => props.theme.color.green};
+    }
   }
 
 `;

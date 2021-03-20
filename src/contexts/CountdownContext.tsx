@@ -22,12 +22,12 @@ let countdownTimeout: NodeJS.Timeout;
 export function CountdownProvider({ children }: CountdownProviderProps){
   const { startNewChallenge } = useContext(ChallengesContext);
 
-  const [time, setTime] = useState(25 * 60);
+  const [time, setTime] = useState(3);
   const [isActive, setIsActive] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
 
   const minutes = Math.floor(time / 60);
-  const seconds = (time % 60);
+  const seconds = (time);
 
   function startCountdown() {
     setIsActive(true);
@@ -37,7 +37,7 @@ export function CountdownProvider({ children }: CountdownProviderProps){
     clearTimeout(countdownTimeout);
     setIsActive(false);
     setHasFinished(false);
-    setTime(25 * 60);
+    setTime(3);
   }
 
   useEffect(() => {
