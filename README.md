@@ -6,8 +6,7 @@
 ![Teste](./src/assets/moveit.gif)
 ## 🧐 Sobre o projeto
 
-O Moveit é um cronometro, porém com alguns caracteriscas a mais, dentre elas a possibilidade de resolver desafios a cada 25min com o intuito de tornar o ambiente de desenvolvimento mais produtivo e saúdavel.
-
+O Moveit é um cronometro, porém com alguns características a mais, dentre elas a possibilidade de resolver desafios a cada 25min com o intuito de tornar o ambiente de desenvolvimento mais produtivo e saúdavel.
 
 ## ⚙️ Funcionalidades
 - [x] Front-end;
