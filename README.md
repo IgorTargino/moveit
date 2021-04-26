@@ -3,7 +3,7 @@
  <img width=200px height=200px src="./public/icons/logo-full.svg" alt="Project logo"></a>
 </p>
 
-![Teste](./src/assets/moveit.gif)
+![Logo](./src/assets/moveit.gif)
 ## 🧐 Sobre o projeto
 
 O Moveit é um cronometro, porém com alguns características a mais, dentre elas a possibilidade de resolver desafios a cada 25min com o intuito de tornar o ambiente de desenvolvimento mais produtivo e saúdavel.
@@ -52,7 +52,7 @@ NEXTAUTH_URL="URL base do seu site, como http://localhost:3000 ou https://pomodo
 $ git clone https://github.com/IgorTargino/moveit.git
 
 # Acesse a pasta do projeto no prompt de comando 
-$ cd 
+$ cd moveit
 
 # Instale as dependências
 yarn install
