@@ -1,21 +1,18 @@
 import Head from 'next/head';
-
 import { GetServerSideProps } from 'next';
+import {  useSession } from 'next-auth/client';
 
 import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { CompletedChallenges } from '../components/CompletedChallenges';
 import { Countdown } from '../components/Countdown';
 import { ChallengeBox } from '../components/ChallengeBox';
-import ToggleButton from '../components/ToggleButton';
 
-import { ThemeProvider } from 'styled-components';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 
 import { Container, Section } from '../styles/pages/Home';
 
-import { signIn, signOut, useSession } from 'next-auth/client';
 import Redirect from '../components/Redirect';
 
 interface HomeProps {
@@ -27,6 +24,7 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
   const [session]: any = useSession();
+  console.log(session);
 
   if (!session) {
     return <Redirect to="/login" />;
