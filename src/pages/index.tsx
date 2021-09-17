@@ -45,7 +45,7 @@ export default function Home(props: HomeProps) {
         <CountdownProvider>
           <Section>
             <div>
-              <Profile />
+              <Profile name={session.user.name} icon={session.user.image}/>
               <CompletedChallenges />
               <Countdown />
             </div>

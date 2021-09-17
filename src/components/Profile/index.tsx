@@ -3,13 +3,18 @@ import { ChallengesContext } from '../../contexts/ChallengesContext';
 
 import { Container, ImgProfile, DataProfile } from './styles';
 
-export function Profile(){
+interface Props {
+  name: string;
+  icon: string;
+}
+
+export function Profile({name, icon}: Props){
   const { level } = useContext(ChallengesContext);
   return(
     <Container>
-      <ImgProfile src="https://github.com/igortargino.png" alt="Igor Targino"/>
+      <ImgProfile src={icon} alt={name}/>
       <DataProfile>
-        <strong>Igor Targino</strong>
+        <strong>{name}</strong>
         <p>
           <img src="icons/level.svg" alt="level"/>
           Level {level}
