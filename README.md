@@ -73,9 +73,6 @@ Tecnologias utilizadas para desenvolver o projeto:
 - Typescript
 - Styled-Components
 - Context
-- js-cookies
-- React-icons
-- NextAuth
 
 ## 🦸‍♂️ **Autor**
 
