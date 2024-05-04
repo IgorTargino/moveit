@@ -83,5 +83,5 @@ Tecnologias utilizadas para desenvolver o projeto:
 [![Linkedin Badge](https://img.shields.io/badge/-IgorTargino-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-targino/)](https://www.linkedin.com/in/igor-targino/)
 [![Gmail Badge](https://img.shields.io/badge/-igortargino01@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:igortargino01@gmail.com)](mailto:igortargino01@gmail.com)
 
->Este projeto foi desenvolvido com ❤️ por **[Igor Targino](https://github.com/IgorTargino)**, com o instrutor **[Diego Fernandes](https://www.linkedin.com/in/diego-schell-fernandes/)** durante a **[Next Level Week # 4 - Trilha ReactJS](https://nextlevelweek.com/)** da **[Rocketseat](https://rocketseat.com.br)** 💜<br> 
+>Este projeto foi desenvolvido com ❤️ por **[Igor Targino](https://github.com/IgorTargino)**
 Se te ajudou, dá ⭐, vai me ajudar também 😉
